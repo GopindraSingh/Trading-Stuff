@@ -1,2 +1,20 @@
 Use this token to access the HTTP API:
 8880229904:AAG9fgmvnqireLx16wMl6SyA07E530mGuj4
+
+
+
+
+
+
+
+No, starting the chat will not display your Chat ID directly on the screen.
+
+When you click Start, it simply opens the communication line and saves your ID on Telegram's servers. To actually see that hidden number, you have to use the browser trick:
+
+    Go to your web browser and open: [https://api.telegram.org/botYOUR_BOT_TOKEN/getUpdates](https://api.telegram.org/botYOUR_BOT_TOKEN/getUpdates) (replace with your actual token).
+
+    Look at the text on the screen to find "chat":{"id": followed by your numbers.
+
+Alternatively, if that browser method sounds confusing, you can just search for @userinfobot in Telegram, open a chat with it, and it will immediately reply with your exact numeric ID.
+
+Have you been able to install the app and try one of these two ways to grab your ID?
